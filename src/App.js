@@ -13,13 +13,6 @@ function App() {
     if(!result){
       setCurrentValue((currentValue)=> (currentValue === '0' ? number : currentValue + number));
 
-      // if(currentValue === '0'){
-      //   setCurrentValue(number);
-        
-      // }else{
-      //   setCurrentValue(currentValue + number);
-        
-      // } 
     }else{
       setCurrentValue(number);
       setResult(false);
