@@ -17,11 +17,14 @@ export const handleOperationResult = (operator, previousNumber, currentValue , s
         case "/":
           result = (previous / current);
           break; 
+        case "%":
+          result = (previous / current);
+          break; 
         default:
           return;
       }
 
-      setCurrentValue(result);
+      setCurrentValue(result.toString());
       setOperator(null);
       setPreviousNumber(null);
       setResult(true);

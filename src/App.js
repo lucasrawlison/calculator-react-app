@@ -5,6 +5,8 @@ import {handleDel} from './utils/handleDel/handleDel.js';
 import {handleEraseInput} from './utils/handleEraseInput/handleEraseInput.js';
 import {handleOperationResult} from './utils/handleOperationResult/handleOperationResult.js';
 import {handleOperatorInput} from './utils/handleOperatorInput/handleOperatorInput.js';
+import {handleNegative} from './utils/handleNegative/handleNegative.js';
+import {handleInsertDot} from './utils/handleInsertDot/handleInsertDot.js';
 
 
 import { useState } from "react";
@@ -38,6 +40,9 @@ function App() {
           setResult = {setResult}
           setOperator = {setOperator}
           setPreviousNumber = {setPreviousNumber}
+          handleNegative = {handleNegative}
+          handleInsertDot={handleInsertDot}
+          
         />
       </div>
     </div>
